@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	char a = '0';
+	int a = 48;
 
-	char b = '0';
+	int  b = 48;
 
-	while (a <= '9')
+	while (a <= 57)
 	{
-		while (b <= '9')
+		while (b <= 57)
 		{
 			if (a >= b)
 			{
@@ -21,7 +21,7 @@ int main(void)
 			}
 			putchar(a);
 			putchar(b);
-			if (a < '9')
+			if (a < 57)
 			{
 				putchar(',');
 				putchar(' ');
@@ -29,7 +29,7 @@ int main(void)
 			b++;
 		}
 		a++;
-		b = 0;
+		b = 48;
 	}
 	putchar('\n');
 	return (0);
